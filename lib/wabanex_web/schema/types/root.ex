@@ -7,7 +7,7 @@ defmodule WabanexWeb.Schema.Types.Root do
 
   alias WabanexWeb.Schema.Types
 
-  import_types Types.Custom.UUID4
+
   import_types Types.User
   import_types Types.Training
 
