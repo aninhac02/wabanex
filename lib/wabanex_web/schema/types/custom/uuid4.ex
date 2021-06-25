@@ -1,5 +1,4 @@
-defmodule Wabanex.Schema.Types.Custom.UUID4 do
-
+defmodule WabanexWeb.Schema.Types.Custom.UUID4 do
   use Absinthe.Schema.Notation
 
   alias Ecto.UUID
@@ -10,7 +9,6 @@ defmodule Wabanex.Schema.Types.Custom.UUID4 do
     character sequences. The UUID4 type is most often used to represent unique
     human-readable ID strings.
     """)
-
     serialize(&encode/1)
     parse(&decode/1)
   end
